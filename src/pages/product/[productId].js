@@ -4,7 +4,7 @@ import React from "react";
 
 const ProductDetails = ({ product }) => {
   return (
-    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ">
       <div>
         <Image
           alt={product?.product_name}
@@ -45,10 +45,26 @@ export const getStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
+/*
 export const getStaticProps = async (context) => {
   const { params } = context;
   const res = await fetch(`http://localhost:5000/pc_parts/${params.productId}`);
   const data = await res.json();
+
+  return {
+    props: {
+      product: data,
+    },
+  };
+};
+*/
+
+export const getStaticProps = async (context) => {
+  const { params } = context;
+  const res = await fetch(`http://localhost:5000/pc_parts/${params.productId}`);
+  const data = await res.json();
+
+  console.log("Fetched data:", data); // Add this line for debugging
 
   return {
     props: {

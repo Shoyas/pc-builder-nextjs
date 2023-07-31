@@ -19,7 +19,7 @@ const ErrorPage = () => {
         }, 5000);
     
         return () => clearInterval(interval);
-      }, [countdown]);
+      }, [router]);
 
 
   return (

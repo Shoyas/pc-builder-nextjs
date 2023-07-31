@@ -70,6 +70,7 @@ ProductCategory.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
+/*
 export const getStaticPaths = async () => {
   const res = await fetch("http://localhost:5000/pc_parts");
   const products = await res.json();
@@ -78,7 +79,21 @@ export const getStaticPaths = async () => {
     params: { categoryValue: product.category },
   }));
   // console.log("Generated paths: ", paths);
-  return { paths, fallback: true };
+  return { paths, fallback: false };
+};
+*/
+
+export const getStaticPaths = async () => {
+  const res = await fetch("http://localhost:5000/pc_parts");
+  const products = await res.json();
+
+  console.log("Fetched data:", products); // Add this line for debugging
+
+  const paths = products.map((product) => ({
+    params: { categoryValue: product.category },
+  }));
+
+  return { paths, fallback: false };
 };
 
 export const getStaticProps = async (context) => {
@@ -99,6 +114,7 @@ export const getStaticProps = async (context) => {
     },
   };
 };
+
 
 /*
 export const getStaticPaths = async () => {
