@@ -54,9 +54,9 @@ HomePage.getLayout = function getLayout(page) {
 
 // Static Site Generation
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/pc_parts");
+  const res = await fetch("https://a6-pc-buider-backend.vercel.app/pc_parts");
   const data = await res.json();
-  // console.log("Coming data: ",data)
+  console.log("Coming data: ",data)
 
   // Shuffle the data array using Fisher-Yates algorithm
   for (let i = data.length - 1; i > 0; i--) {

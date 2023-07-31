@@ -70,24 +70,12 @@ ProductCategory.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-/*
-export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/pc_parts");
-  const products = await res.json();
-  // console.log("Category getStaticPaths: ", products);
-  const paths = products.map((product) => ({
-    params: { categoryValue: product.category },
-  }));
-  // console.log("Generated paths: ", paths);
-  return { paths, fallback: false };
-};
-*/
 
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/pc_parts");
+  const res = await fetch("https://a6-pc-buider-backend.vercel.app/pc_parts");
   const products = await res.json();
 
-  console.log("Fetched data:", products); // Add this line for debugging
+  console.log("Fetched data from Category value:", products); // Add this line for debugging
 
   const paths = products.map((product) => ({
     params: { categoryValue: product.category },
@@ -98,15 +86,13 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const { params } = context;
-  // console.log("CategoryValue in getStaticProps: ", params.categoryValue);
 
-  const res = await fetch("http://localhost:5000/pc_parts");
+  const res = await fetch("https://a6-pc-buider-backend.vercel.app/pc_parts");
   const products = await res.json();
   const filteredProducts = products.filter(
     (product) => product.category === params.categoryValue
   );
 
-  // console.log("Category getStaticProps: ", filteredProducts);
 
   return {
     props: {
@@ -118,7 +104,7 @@ export const getStaticProps = async (context) => {
 
 /*
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/pc_parts");
+  const res = await fetch("https://a6-pc-buider-backend.vercel.app/pc_parts");
   const products = await res.json();
   console.log("Category getStaticPaths: ", products);
   const paths = products.map((product) => ({
@@ -132,7 +118,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const { params } = context;
   const res = await fetch(
-    `http://localhost:5000/pc_parts/${params.categoryValue}`
+    `https://a6-pc-buider-backend.vercel.app/pc_parts/${params.categoryValue}`
   );
   const data = await res.json();
     console.log("Category getStaticProps: ",data)
@@ -150,7 +136,7 @@ export const getStaticProps = async (context) => {
   console.log("CategoryValue in getStaticProps: ", params.categoryValue);
 
   const res = await fetch(
-    `http://localhost:5000/pc_parts/${params.categoryValue}`
+    `https://a6-pc-buider-backend.vercel.app/pc_parts/${params.categoryValue}`
   );
   const data = await res.json();
   console.log("Category getStaticProps: ", data);

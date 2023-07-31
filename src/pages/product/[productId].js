@@ -35,8 +35,9 @@ ProductDetails.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/pc_parts");
+  const res = await fetch("https://a6-pc-buider-backend.vercel.app/pc_parts");
   const products = await res.json();
+  console.log("Fetched data from ProductID getStaticPaths:", products); // Add this line for debugging
 
   const paths = products.map((product) => ({
     params: { productId: product.id },
@@ -45,11 +46,26 @@ export const getStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
+export const getStaticProps = async (context) => {
+  const { params } = context;
+  const res = await fetch(`https://a6-pc-buider-backend.vercel.app/pc_parts/${params.productId}`);
+  const data = await res.json();
+
+  console.log("Fetched data from ProductID:", data); // Add this line for debugging
+
+  return {
+    props: {
+      product: data,
+    },
+  };
+};
 /*
 export const getStaticProps = async (context) => {
   const { params } = context;
-  const res = await fetch(`http://localhost:5000/pc_parts/${params.productId}`);
+  const res = await fetch(`https://a6-pc-buider-backend.vercel.app/pc_parts/${params.productId}`);
   const data = await res.json();
+
+  console.log("Fetched data from ProductID:", data); // Add this line for debugging
 
   return {
     props: {
@@ -58,17 +74,3 @@ export const getStaticProps = async (context) => {
   };
 };
 */
-
-export const getStaticProps = async (context) => {
-  const { params } = context;
-  const res = await fetch(`http://localhost:5000/pc_parts/${params.productId}`);
-  const data = await res.json();
-
-  console.log("Fetched data:", data); // Add this line for debugging
-
-  return {
-    props: {
-      product: data,
-    },
-  };
-};

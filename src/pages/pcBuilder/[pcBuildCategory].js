@@ -83,7 +83,7 @@ PcBuildCategory.getLayout = function getLayout(page) {
 };
 
 // export const getStaticPaths = async () => {
-//   const res = await fetch("http://localhost:5000/pc_parts");
+//   const res = await fetch("https://a6-pc-buider-backend.vercel.app/pc_parts");
 //   const products = await res.json();
 // //   console.log("Category getStaticPaths pc-build: ", products);
 //   const paths = products.map((product) => ({
@@ -97,7 +97,7 @@ export const getServerSideProps = async (context) => {
   const { params } = context;
   // console.log("CategoryValue in getStaticProps: ", params.categoryValue);
 
-  const res = await fetch("http://localhost:5000/pc_parts");
+  const res = await fetch("https://a6-pc-buider-backend.vercel.app/pc_parts");
   const products = await res.json();
   const filteredProducts = products.filter(
     (product) => product.category === params.pcBuildCategory

@@ -2,7 +2,7 @@
   "pc_parts": [
     { 
       "id": "1",
-      "image_url": "/pd-images/id1.jpg",
+      "image_url": "https://thinkcomputers.org/wp-content/uploads/2021/04/intel-core-i9-11900k-14.jpg",
       "product_name": "Intel Core i9-11900K",
       "category": "CPU or Processor",
       "price": 499.99,
@@ -14,7 +14,7 @@
     },
     {
       "id": "2",
-      "image_url": "/pd-images/id2.jpg",
+      "image_url": "https://dlcdnwebimgs.asus.com/files/media/B7CBA71A-2549-4C30-843E-15189BB8E78D/V1/img/z590/spec/Spec_immersion_M.jpg",
       "product_name": "ASUS ROG Strix Z590-E Gaming",
       "category": "Motherboard",
       "price": 349.99,
@@ -26,7 +26,7 @@
     },
     {
       "id": "3",
-      "image_url": "/pd-images/id3.jpg",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFyNvwN7NOK1HGL62MRcMETwucmpOcKwmEXg&usqp=CAU",
       "product_name": "Corsair Vengeance LPX 16GB DDR4",
       "category": "RAM",
       "price": 129.99,
@@ -38,7 +38,7 @@
     },
     {
       "id": "4",
-      "image_url": "/pd-images/id4.png",
+      "image_url": "https://m.media-amazon.com/images/I/41OgzDMkheL._AC_.jpg",
       "product_name": "EVGA SuperNOVA 750 G+",
       "category": "Power Supply Unit",
       "price": 129.99,
@@ -50,7 +50,7 @@
     },
     {
       "id": "5",
-      "image_url": "/pd-images/id5.jpg",
+      "image_url": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Samsung_970_Evo_Plus_SSD_1TB_Deal_gu%CC%88nstig.jpg",
       "product_name": "Samsung 970 EVO Plus 1TB NVMe SSD",
       "category": "Storage",
       "price": 199.99,
@@ -62,7 +62,7 @@
     },
     {
       "id": "6",
-      "image_url": "/pd-images/id6.webp",
+      "image_url": "https://www.cloud.ryanscomputers.com/cdn/products/main/lg-27gl850-27-inch-ultragear-qhd-2560x1440-nano-31578386019.webp",
       "product_name": "LG 27GL850-B 27-inch Gaming Monitor",
       "category": "Monitor",
       "price": 399.99,
@@ -74,7 +74,7 @@
     },
     {
       "id": "7",
-      "image_url": "/pd-images/id7.webp",
+      "image_url": "https://www.cloud.ryanscomputers.com/cdn/products/medium/gigabyte-geforce-rtx-3080-gaming-oc-10g-10gb-11602053545.webp",
       "product_name": "NVIDIA GeForce RTX 3080",
       "category": "Others",
       "price": 799.99,
@@ -86,7 +86,7 @@
     },
     {
             "id": "8",
-            "image_url": "/pd-images/id8.png",
+            "image_url": "https://vibegaming.com.bd/wp-content/uploads/2021/10/Untitled-1-01-26-scaled.jpg",
             "product_name": "Logitech G502 HERO",
             "category": "Others",
             "price": 79.99,
@@ -98,7 +98,7 @@
           },
           {
            "id": "9",
-            "image_url": "/pd-images/id9.jpg",
+            "image_url": "https://www.bdshop.com/pub/media/catalog/product/c/o/corsair_k95_rgb_platinum_mechanical.jpg",
             "product_name": "Corsair K95 RGB Platinum XT",
             "category": "Others",
             "price": 199.99,
@@ -110,7 +110,7 @@
           },
           {
            "id": "10",
-            "image_url": "/pd-images/id10.jpg",
+            "image_url": "https://liveofficialesports.com/wp-content/uploads/2022/07/Ryzen-5800x.png",
             "product_name": "AMD Ryzen 7 5800X",
             "category": "CPU or Processor",
             "price": 399.99,
@@ -122,7 +122,7 @@
           },
           {
            "id": "11",
-            "image_url": "/pd-images/id11.jpg",
+            "image_url": "https://www.cloud.ryanscomputers.com/cdn/products/medium/gigabyte-b550-aorus-pro-ac-ddr4-am4-socket-amd-11595940539.webp",
             "product_name": "GIGABYTE B550 AORUS PRO",
             "category": "Motherboard",
             "price": 189.99,
@@ -134,7 +134,7 @@
           },
           {
             "id": "12",
-            "image_url": "/pd-images/id12.jpg",
+            "image_url": "https://cdn.mos.cms.futurecdn.net/wrRy3pH3bKgeuLzrwwSsBm.jpg",
             "product_name": "Crucial Ballistix 32GB DDR4",
             "category": "RAM",
             "price": 249.99,
@@ -146,7 +146,7 @@
           },
           {
            "id": "13",
-            "image_url": "/pd-images/id13.jpg",
+            "image_url": "https://seasonic.com/pub/media/catalog/product/cache/3cbda8e892dc62fc02660815c2a4b231/f/o/focus-gx-650-box_1.jpg",
             "product_name": "Seasonic Focus GX-650",
             "category": "Power Supply Unit",
             "price": 109.99,
@@ -158,7 +158,7 @@
           },
           {
             "id": "14",
-            "image_url": "/pd-images/id14.jpg",
+            "image_url": "https://www.cloud.ryanscomputers.com/cdn/products/main/western-digital-blue-5400rpm-2tb-desktop-hard-11635944229.webp",
             "product_name": "Western Digital Blue 2TB HDD",
             "category": "Storage",
             "price": 89.99,
@@ -170,7 +170,7 @@
           },
           {
             "id": "15",
-            "image_url": "/pd-images/id15.jpg",
+            "image_url": "https://cdn.mos.cms.futurecdn.net/t7QkAbZqTeXenXufTBifiJ.jpg",
             "product_name": "Acer Predator X34",
             "category": "Monitor",
             "price": 799.99,
@@ -182,7 +182,7 @@
           },
           {
            "id": "16",
-            "image_url": "/pd-images/id16.webp",
+            "image_url": "https://www.cloud.ryanscomputers.com/cdn/products/medium/gigabyte-radeon-rx-6800-xt-gaming-oc-16g-16gb-11613375253.webp",
             "product_name": "AMD Radeon RX 6800 XT",
             "category": "Others",
             "price": 649.99,
@@ -194,7 +194,7 @@
           },
           {
            "id": "17",
-            "image_url": "/pd-images/id17.jpg",
+            "image_url": "https://www.vibegaming.com.bd/wp-content/uploads/2022/02/razer-deathadder-v2-wired-gaming-mouse-21618116186-1.webp",
             "product_name": "Razer DeathAdder V2",
             "category": "Others",
             "price": 69.99,
@@ -206,7 +206,7 @@
           },
           {
             "id": "18",
-            "image_url": "/pd-images/id18.jpg",
+            "image_url": "https://i.rtings.com/assets/products/6F9FAU2A/steelseries-apex-pro-tkl-2023/design-medium.jpg",
             "product_name": "SteelSeries Apex Pro",
             "category": "Others",
             "price": 199.99,
@@ -218,7 +218,7 @@
           },
           {
            "id": "19",
-            "image_url": "/pd-images/id19.webp",
+            "image_url": "https://www.pchouse.com.bd/image/cache/catalog/processor/AMD%20Ryzen/%209%205900X%20Processor/amd-ryzen-9-5900x-processor-600x315h.jpg.webp",
             "product_name": "AMD Ryzen 9 5900X",
             "category": "CPU/Processor",
             "price": 549.99,
@@ -230,7 +230,7 @@
           },
           {
            "id": "20",
-            "image_url": "/pd-images/id20.webp",
+            "image_url": "https://m.media-amazon.com/images/I/91oOznn-4CS._AC_UF894,1000_QL80_.jpg",
             "product_name": "MSI MPG Z590 Gaming Edge WiFi",
             "category": "Motherboard",
             "price": 259.99,
