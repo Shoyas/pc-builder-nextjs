@@ -16,6 +16,7 @@ const FeatureProductsPage = ({ allProducts }) => {
         {allProducts.map((product) => (
           <div key={product.id} className="" span={6}>
             <Card
+              responsive="true"
               className="mb-11"
               hoverable
               style={{ width: 300 }}

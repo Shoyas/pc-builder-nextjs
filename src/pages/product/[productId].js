@@ -37,7 +37,9 @@ ProductDetails.getLayout = function getLayout(page) {
 export const getStaticPaths = async () => {
   const res = await fetch("https://a6-pc-buider-backend.vercel.app/pc_parts");
   const products = await res.json();
-  console.log("Fetched data from ProductID getStaticPaths:", products); // Add this line for debugging
+
+  // Add this line for debugging
+  // console.log("Fetched data from ProductID getStaticPaths:", products); 
 
   const paths = products.map((product) => ({
     params: { productId: product.id },

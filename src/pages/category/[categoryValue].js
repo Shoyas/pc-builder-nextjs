@@ -11,12 +11,15 @@ const ProductCategory = ({ allProducts }) => {
 
   return (
     <div className="mt-4 container mx-auto">
-      <h1 className="text-6xl text-center">{allProducts[0].category} Products</h1>
+      <h1 className="text-6xl text-center">
+        {allProducts[0].category} Products
+      </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
         {allProducts.map((product) => (
           <div key={product.id} className="" span={6}>
             <Card
+              responsive="true"
               className="mb-11"
               hoverable
               style={{ width: 300 }}
@@ -70,12 +73,11 @@ ProductCategory.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-
 export const getStaticPaths = async () => {
   const res = await fetch("https://a6-pc-buider-backend.vercel.app/pc_parts");
   const products = await res.json();
-
-  console.log("Fetched data from Category value:", products); // Add this line for debugging
+  // Add this line for debugging
+  // console.log("Fetched data from Category value:", products);
 
   const paths = products.map((product) => ({
     params: { categoryValue: product.category },
@@ -93,14 +95,12 @@ export const getStaticProps = async (context) => {
     (product) => product.category === params.categoryValue
   );
 
-
   return {
     props: {
       allProducts: filteredProducts,
     },
   };
 };
-
 
 /*
 export const getStaticPaths = async () => {

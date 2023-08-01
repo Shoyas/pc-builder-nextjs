@@ -34,7 +34,7 @@ const ErrorPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <p className="text-purple-400">{`Redirecting to home page in ${countdown} seconds...`}</p>
-      <Image src={errorImage} alt="" width={700} height={500} layout="responsive"/>
+      <Image src={errorImage} alt="" width={700} height={500} layout="intrinsic"/>
     </div>
   );
 };

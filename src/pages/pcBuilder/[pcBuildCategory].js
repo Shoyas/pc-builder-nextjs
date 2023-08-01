@@ -16,8 +16,7 @@ const PcBuildCategory = ({ buildProducts }) => {
   const handleAddProduct = (product) => {
     // console.log("Clicked Product: ", product);
     dispatch(addToPcBuilder(product));
-
-  }
+  };
 
   return (
     <div className="mt-4 container mx-auto">
@@ -29,6 +28,7 @@ const PcBuildCategory = ({ buildProducts }) => {
         {buildProducts.map((product) => (
           <div key={product.id} className="" span={6}>
             <Card
+              responsive="true"
               className="mb-11"
               hoverable
               style={{ width: 300 }}
@@ -65,7 +65,7 @@ const PcBuildCategory = ({ buildProducts }) => {
 
               <Button type="default" onClick={() => handleAddProduct(product)}>
                 <Link href="/pcBuilder">
-                <PlusOutlined />  Add To Builder <PlusOutlined />
+                  <PlusOutlined /> Add To Builder <PlusOutlined />
                 </Link>
               </Button>
             </Card>

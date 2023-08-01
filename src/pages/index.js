@@ -56,15 +56,15 @@ HomePage.getLayout = function getLayout(page) {
 export const getStaticProps = async () => {
   const res = await fetch("https://a6-pc-buider-backend.vercel.app/pc_parts");
   const data = await res.json();
-  console.log("Coming data: ",data)
+  // console.log("Coming data: ",data)
 
   // Shuffle the data array using Fisher-Yates algorithm
-  for (let i = data.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [data[i], data[j]] = [data[j], data[i]];
-  }
+  // for (let i = data.length - 1; i > 0; i--) {
+  //   const j = Math.floor(Math.random() * (i + 1));
+  //   [data[i], data[j]] = [data[j], data[i]];
+  // }
 
-  const limit = 6;
+  const limit = 20;
   const limitedData = data.slice(0, limit);
 
   return {
