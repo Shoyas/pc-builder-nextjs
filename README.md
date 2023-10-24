@@ -1,4 +1,4 @@
-## Assignment-6
+
 ### PC Builder Website
 __________________________________
 ## Live Link: https://a6-pc-builder.vercel.app/
